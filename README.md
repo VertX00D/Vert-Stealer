@@ -10,7 +10,7 @@
 
 ## Features:  
 » Grab Discord Information and HQ Friends.
-
+  
 » Grab Password & cookies.
 
 » Discord Injection
