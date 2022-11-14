@@ -46,11 +46,11 @@ And press covert .py .exe
 
 ## Pictures:
  
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://media.discordapp.net/attachments/1041055954889871360/1041055966852042832/image.png?width=736&height=473"></img>
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimage1.png"></img>
 
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://media.discordapp.net/attachments/1041055954889871360/1041056174251978862/image.png"></img>
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimage2.png."></img>
 
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://media.discordapp.net/attachments/1041055954889871360/1041056470218834050/image.png?width=441&height=473"></img>
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimage3.png"></img>
  
  
 ## Disclaimer:
