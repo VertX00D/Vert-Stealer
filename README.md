@@ -8,7 +8,7 @@
 <p> If you need help you can write on discord ✬ Wapper ¹⁰³#0028 </p>
   
 
-## Features:  
+## Features:     
 » Grab Discord Information and HQ Friends.
   
 » Grab Password & cookies.
