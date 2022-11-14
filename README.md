@@ -1,7 +1,7 @@
 <h1> Vert Stealer</h1> 
 <p align="center"> 
   <kbd>
-<img src="https://media.discordapp.net/attachments/616157882269827102/1037025491380621322/ffd2fb6949e3d64cdead26d963baa042.jpg" width="400"></img>
+<img src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimage.png" width="400"></img>
   </kbd>
 </p>
 <h2>  Helping </h2>
