@@ -20,7 +20,7 @@
 » Shows Crypto Wallets
 
 » Grab metamask/exodus
-
+  
 » Grab chromium based Passwords
 
 
