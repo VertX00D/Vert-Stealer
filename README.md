@@ -5,7 +5,7 @@
   </kbd>
 </p>
 <h2>  Helping </h2>
-<p> If you need help you can write on discord Wapper ¹⁰³#0028 </p>
+<p> If you need help you can write on discord ✬ Wapper ¹⁰³#0028 </p>
   
 
 ## Features:  
