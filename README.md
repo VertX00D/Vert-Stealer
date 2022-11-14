@@ -9,7 +9,7 @@
   
   
 ## Features:     
-» Grab Discord Information and HQ Friends.
+» Grab Discord Information and HQ Friends.   
   
 » Grab Password & cookies.
 
