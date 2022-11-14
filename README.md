@@ -11,17 +11,17 @@
 ## Features:     
 » Grab Discord Information and HQ Friends.
   
-» Grab Password & cookies
+» Grab Password & cookies.
 
-» Discord Injection
+» Discord Injection.
 
 » Grab Files.
 
-» Shows Crypto Wallets
+» Shows Crypto Wallets.
 
-» Grab metamask/exodus
+» Grab metamask/exodus.
   
-» Grab chromium based Passwords
+» Grab chromium based Passwords.
 
 
 ## Setup:
