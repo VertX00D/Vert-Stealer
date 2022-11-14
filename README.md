@@ -1,7 +1,7 @@
 <h1> Vert Stealer</h1> 
 <p align="center"> 
   <kbd>
-<img src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimage.png" width="400"></img>
+<img src="https://raw.githubusercontent.com/VertX00D/Vert-Stealer/main/images/vertimages.png" width="400"></img>
   </kbd>
 </p>
 <h2>  Helping </h2>
