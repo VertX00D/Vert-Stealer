@@ -6,7 +6,7 @@ import re
 from base64 import b64decode
 from json import loads as json_loads, load
 from ctypes import windll, wintypes, byref, cdll, Structure, POINTER, c_char, c_buffer
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen  
 from json import *
 import time  
 import shutil
